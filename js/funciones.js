@@ -40,3 +40,14 @@ var myObject = {
   }
 };
 console.log(myObject.func());
+
+var myObject2 = {
+  property: "Hola Mundo"
+};
+
+function retornarPropiedad(){
+  alert(this.property);
+};
+
+myObject2.f = retornarPropiedad;
+myObject2.f();
