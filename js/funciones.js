@@ -11,3 +11,13 @@ function Personalizada(numero1,numero2,function2){
 }
 
 Personalizada(4,8,function(resultado){ alert(resultado);});
+
+//Funciones autoejecutables
+
+(function(){
+  console.log(this);//Aqui el resultado this es igual a window
+})();
+
+(function(nombre,apellido){
+  console.log(nombre + '' + apellido);
+})('Andres',Mensaje);
