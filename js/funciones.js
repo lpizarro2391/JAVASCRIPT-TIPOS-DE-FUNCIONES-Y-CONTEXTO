@@ -16,7 +16,7 @@ Personalizada(4,8,function(resultado){ alert(resultado);});
 
 */
 //Funciones autoejecutables
-
+/*
 (function(){
   console.log(this);//Aqui el resultado this es igual a window
 })();
@@ -32,3 +32,11 @@ console.log(window.variable1);
 })('Andres',Mensaje);
 
 */
+
+var myObject = {
+  property:"Hola Mundo",
+  func: function(){
+    return this.property;
+  }
+};
+console.log(myObject.func());
